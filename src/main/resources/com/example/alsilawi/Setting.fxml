@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="456.0" prefWidth="716.0" styleClass="black_" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alsilawi.Setting">
+   <children>
+      <Label layoutX="258.0" layoutY="5.0" prefHeight="46.0" prefWidth="110.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Caveat Regular" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblName" layoutX="356.0" layoutY="2.0" prefHeight="18.0" prefWidth="195.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="Caveat Regular" size="36.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="364.0" layoutY="145.0" prefHeight="42.0" prefWidth="334.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/location(1).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtCity" prefHeight="55.0" prefWidth="298.0" promptText="City" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="8.0" layoutY="146.0" prefHeight="42.0" prefWidth="334.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/telephone-call.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtPhone" prefHeight="55.0" prefWidth="638.0" promptText="Phone No." style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="366.0" layoutY="61.0" prefHeight="55.0" prefWidth="334.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/email(1).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtEmail" prefHeight="39.0" prefWidth="279.0" promptText="Email" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Pane layoutX="2.0" layoutY="60.0" prefHeight="55.0" prefWidth="334.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="6.0" layoutY="3.0" prefHeight="55.0" prefWidth="334.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="44.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/user(4).png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtName" prefHeight="34.0" prefWidth="290.0" promptText="Full Name" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="8.0" layoutY="237.0" prefHeight="38.0" prefWidth="334.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/street-view-doll.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtStreetName" prefHeight="55.0" prefWidth="638.0" promptText="Street Name" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+               <font>
+                  <Font name="Segoe UI" size="18.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="356.0" layoutY="241.0" prefHeight="40.0" prefWidth="346.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/building(2).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtBuildingNumber" prefHeight="40.0" prefWidth="286.0" promptText="Building Number" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="7.0" layoutY="302.0" prefHeight="55.0" prefWidth="698.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/padlock(2).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtPassword" prefHeight="48.0" prefWidth="638.0" promptText="Password" style="-fx-border-width: 0 0 2 0; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: white;">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="btnSave" layoutX="252.0" layoutY="400.0" mnemonicParsing="false" onAction="#ActionSave" prefHeight="37.0" prefWidth="204.0" style="-fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblWarning" layoutX="41.0" layoutY="358.0" prefHeight="38.0" prefWidth="558.0" text="LabelWarning" textFill="RED" visible="false">
+         <font>
+            <Font name="Segoe UI" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

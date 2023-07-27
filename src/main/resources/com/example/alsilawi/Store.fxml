@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="bacsepane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1315.0" styleClass="black_" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alsilawi.Store">
+    <children>
+      <Pane layoutX="9.0" layoutY="164.0" prefHeight="610.0" prefWidth="841.0" style="-fx-background-color: ffffff; -fx-background-radius: 10; -fx-border-color: #000000;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="465.0" AnchorPane.topAnchor="164.0">
+         <children>
+              <ScrollPane fx:id="ScrollPane" layoutX="7.0" layoutY="47.0" prefHeight="550.0" prefWidth="827.0" style="-fx-background-color: ffffff; -fx-border-color: #000000;">
+                  <content>
+                  <GridPane fx:id="gridItems" hgap="50.0" prefHeight="23.0" prefWidth="819.0" style="-fx-background-color: transparent;" vgap="30.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </GridPane>
+                  </content>
+              </ScrollPane>
+            <Label layoutX="21.0" layoutY="10.0" text="Them" textFill="#eda723">
+               <font>
+                  <Font name="Segoe UI Bold" size="19.0" />
+               </font>
+            </Label>
+            <ColorPicker fx:id="theam" editable="true" layoutX="91.0" layoutY="9.0" promptText="Theam" />
+         </children>
+      </Pane>
+        <Pane layoutX="582.0000000000001" layoutY="66.0" prefHeight="80.0" prefWidth="730.0" AnchorPane.bottomAnchor="644.0" AnchorPane.rightAnchor="2.599999999999909">
+            <children>
+                <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="27.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/filter-filled-tool-symbol.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="20.0" layoutY="49.0" prefHeight="28.0" prefWidth="60.0" text="Filter" textFill="#eda723">
+                    <font>
+                        <Font name="Segoe UI Bold" size="22.0" />
+                    </font>
+                </Label>
+            <RadioButton fx:id="radioButtonFromHight" layoutX="97.0" layoutY="32.0" mnemonicParsing="false" text="From Hight  to Low Price" textFill="#eda723">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="groupFilter" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="radioButtonFromLow" layoutX="421.0" layoutY="32.0" mnemonicParsing="false" text="From Low to Hight Price" textFill="#eda723">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </RadioButton>
+            </children>
+        </Pane>
+        <HBox alignment="CENTER" layoutX="3.000000000000057" layoutY="5.999999999999979" prefHeight="54.0" prefWidth="171.0" AnchorPane.bottomAnchor="729.6" AnchorPane.rightAnchor="1140.8">
+            <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/logout(1).png" />
+            </ImageView>
+            <Button fx:id="btnSignOut" mnemonicParsing="false" onAction="#ActionExit" prefHeight="42.0" prefWidth="120.0" styleClass="black_" stylesheets="@../../../style.css" text="Sign Out" textFill="WHITE">
+                <font>
+                    <Font name="Segoe UI Bold" size="21.0" />
+                </font>
+            </Button>
+        </HBox>
+      <Pane layoutX="853.0" layoutY="165.0" prefHeight="606.0" prefWidth="450.0" style="-fx-background-color: ffffff; -fx-border-radius: 10;" AnchorPane.rightAnchor="8.0">
+         <children>
+            <Pane layoutX="3.0" layoutY="3.0" prefHeight="594.0" prefWidth="444.0" style="-fx-background-color: #000000; -fx-background-radius: 10;">
+               <children>
+                  <Button fx:id="btnReject" layoutX="277.0" layoutY="489.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="132.0" style="-fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Reject All" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="22.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="49.0" layoutY="490.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="119.0" style="-fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Cancel" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="26.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lblPrice" alignment="TOP_RIGHT" layoutX="225.0" layoutY="361.0" prefHeight="27.0" prefWidth="203.0" text="0.0" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="12.0" layoutY="372.0" text="Total:" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="products" layoutX="13.0" layoutY="11.0" prefHeight="344.0" prefWidth="425.0" style="-fx-border-radius: 10; -fx-background-radius: 10; -fx-border-color: #eda723;" stylesheets="@../../../style.css">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="133.0" style="-fx-border-radius: 10;" text="Product" />
+                <TableColumn fx:id="qun" prefWidth="148.0" text="Quantity" />
+                  <TableColumn fx:id="price" prefWidth="96.0" text="Price($)" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="btnPay" layoutX="12.0" layoutY="412.0" mnemonicParsing="false" onAction="#ActionPay" prefHeight="57.0" prefWidth="427.0" style="-fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Pay" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Bold Italic" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+          <ComboBox fx:id="comboBoxCategories" layoutX="23.0" layoutY="90.0" prefHeight="42.0" prefWidth="450.0" promptText="Categories" style="-fx-background-radius: 10 10 10 10; -fx-background-color: #eda723;" />
+      <ImageView fitHeight="43.0" fitWidth="37.0" layoutX="1261.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/settings.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSetting" layoutX="1177.0" layoutY="19.0" mnemonicParsing="false" onAction="#ActionSetting" style="-fx-background-color: transpernt;" text="Setting" textFill="#eda723">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

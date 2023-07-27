@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="305.0" prefWidth="445.0" styleClass="black_" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alsilawi.AlertWarning">
+   <children>
+      <Pane layoutY="-2.0" prefHeight="118.0" prefWidth="446.0" style="-fx-background-color: #eb5252; -fx-border-width: 0px 0px 7px 7px; -fx-background-radius: 0px 0px 7px 7px;" styleClass="shadow" stylesheets="@../../../style.css">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="142.0" layoutX="176.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/alert.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="135.0" layoutY="124.0" text="Warning!" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnClose" layoutX="98.0" layoutY="244.0" mnemonicParsing="false" onAction="#ActionClose" prefHeight="51.0" prefWidth="280.0" style="-fx-background-radius: 15 60; -fx-border-radius: 15 50; -fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Close" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Bold" size="26.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="TWO_PASS_BOX" height="0.0" radius="0.0" width="0.0">
+               <color>
+                  <Color red="1.0" green="0.4274509847164154" blue="0.04313725605607033" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+      <Label fx:id="lblWarning" layoutX="30.0" layoutY="177.0" prefHeight="51.0" prefWidth="386.0" textFill="#f4f4f4">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

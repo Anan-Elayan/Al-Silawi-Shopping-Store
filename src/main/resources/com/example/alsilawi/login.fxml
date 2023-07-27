@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alsilawi.LoginController">
+   <Pane layoutX="520.0" prefHeight="793.0" prefWidth="797.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="520.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <ImageView fitHeight="793.0" fitWidth="795.0" layoutX="1.0" pickOnBounds="true">
+            <cursor>
+               <Cursor fx:constant="N_RESIZE" />
+            </cursor>
+            <effect>
+               <ColorAdjust brightness="-0.63" contrast="0.07" />
+            </effect>
+            <viewport>
+               <Rectangle2D />
+            </viewport>
+            <image>
+               <Image url="@../../../images/item28.jpg" />
+            </image>
+         </ImageView>
+         <Button fx:id="btnTopLogin" layoutX="296.0" layoutY="168.0" mnemonicParsing="false" onMouseEntered="#btnTopLoginEntered" onMouseExited="#btnTopLoginExited" prefHeight="32.0" prefWidth="112.0" style="-fx-background-radius: 44; -fx-background-color: #eda723;" text="Login" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+         </Button>
+         <Button fx:id="btnTopSignup" layoutX="427.0" layoutY="169.0" mnemonicParsing="false" onAction="#signupAction" onMouseEntered="#enteredSignup" onMouseExited="#exitedSignUp" opacity="0.44" prefHeight="32.0" prefWidth="112.0" style="-fx-background-radius: 44; -fx-background-color: #eda723;" text="Sign up" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+         </Button>
+         <Button fx:id="btnForgetPasswd" layoutX="575.0" layoutY="452.0" mnemonicParsing="false" onAction="#ActionForgetPasswd" style="-fx-background-color: transparent;" text="Forget passward ?" textFill="#ffa600">
+            <font>
+               <Font name="Segoe UI Bold" size="19.0" />
+            </font>
+         </Button>
+      </children>
+   </Pane>
+   <ImageView fitHeight="797.0" fitWidth="522.0" layoutY="-1.0" pickOnBounds="true" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="-0.39999999999997726" AnchorPane.rightAnchor="793.0" AnchorPane.topAnchor="-1.6000000000000227">
+      <Image url="@../../../images/Al-silawi.jpg" />
+   </ImageView>
+   <HBox layoutX="572.0" layoutY="272.0" prefHeight="57.0" prefWidth="666.0" AnchorPane.bottomAnchor="460.4" AnchorPane.rightAnchor="76.60000000000002">
+      <Pane prefHeight="47.0" prefWidth="70.0" />
+   </HBox>
+   <HBox layoutX="568.0" layoutY="389.0" prefHeight="48.0" prefWidth="707.0" AnchorPane.rightAnchor="40.0">
+      <Pane prefHeight="75.0" prefWidth="70.0" />
+   </HBox>
+   <Label fx:id="labelNotFoundUser" layoutX="588.0" layoutY="448.0" text="Invalid UserName or Passoard" textFill="RED" visible="false">
+      <font>
+         <Font name="Segoe UI" size="23.0" />
+      </font>
+   </Label>
+   <ImageView fitHeight="100.0" fitWidth="113.0" layoutX="890.0" layoutY="24.0" pickOnBounds="true" AnchorPane.bottomAnchor="666.0" AnchorPane.leftAnchor="890.884765625" AnchorPane.rightAnchor="312.115234375" AnchorPane.topAnchor="24.0">
+      <image>
+         <Image url="@../../../images/group(3).png" />
+      </image>
+   </ImageView>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="563.0" layoutY="270.0" pickOnBounds="true" AnchorPane.bottomAnchor="470.0" AnchorPane.rightAnchor="702.0">
+      <image>
+         <Image url="@../../../images/user(3).png" />
+      </image>
+   </ImageView>
+   <TextField fx:id="txfUserName" layoutX="617.0" layoutY="261.0" prefHeight="55.0" prefWidth="648.0" promptText="User Name" style="-fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-text-fill: #FFFFFF;" AnchorPane.bottomAnchor="474.0" AnchorPane.rightAnchor="51.0">
+      <font>
+         <Font name="Barlow Condensed SemiBold" size="19.0" />
+      </font>
+   </TextField>
+   <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="560.0" layoutY="383.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" AnchorPane.rightAnchor="705.0">
+      <image>
+         <Image url="@../../../images/padlock(1).png" />
+      </image>
+   </ImageView>
+   <PasswordField fx:id="txfPassword" layoutX="617.0" layoutY="378.0" prefHeight="48.0" prefWidth="653.0" promptText="Password" style="-fx-background-radius: 10; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #eda723; -fx-text-fill: #FFFFFF; -fx-background-color: transparent;" AnchorPane.bottomAnchor="364.0" AnchorPane.rightAnchor="45.0">
+      <font>
+         <Font name="Barlow Condensed SemiBold" size="19.0" />
+      </font>
+   </PasswordField>
+   <Text fill="#eaeaea" fontSmoothingType="LCD" layoutX="891.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login" AnchorPane.bottomAnchor="642.09765625" AnchorPane.leftAnchor="890.884765625" AnchorPane.rightAnchor="312.115234375" AnchorPane.topAnchor="116.22265625">
+      <font>
+         <Font name="Segoe Script Bold" size="20.0" />
+      </font>
+   </Text>
+   <Button fx:id="btnLogin" layoutX="769.0" layoutY="564.0" mnemonicParsing="false" onAction="#ActionLogin" onMouseEntered="#btnLoginEntered" onMouseExited="#btnLoginExited" prefHeight="63.0" prefWidth="313.0" style="-fx-background-radius: 44; -fx-background-color: transparent; -fx-border-color: #eda723; -fx-border-radius: 44;" text="Login " textFill="WHITE">
+      <font>
+         <Font name="Segoe UI Bold" size="29.0" />
+      </font>
+   </Button>
+</AnchorPane>

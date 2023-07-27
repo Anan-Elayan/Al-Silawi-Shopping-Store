@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DisplacementMap?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.FloatMap?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alsilawi.AdminSignUp">
+    <Pane layoutX="-1.0" layoutY="-6.0" prefHeight="799.0" prefWidth="1319.0" styleClass="black_" stylesheets="@../../../style.css">
+        <ImageView fitHeight="795.0" fitWidth="444.0" layoutX="875.0" layoutY="5.0" pickOnBounds="true">
+            <effect>
+                <DisplacementMap>
+                    <mapData>
+                        <FloatMap />
+                    </mapData>
+                </DisplacementMap>
+            </effect>
+            <Image url="@../../../images/item30.png" />
+        </ImageView>
+        <HBox alignment="CENTER" layoutX="8.0" layoutY="203.0" prefHeight="69.0" prefWidth="864.0" spacing="20.0" styleClass="search-box" stylesheets="@../../../style.css">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/user(4).png" />
+            </ImageView>
+            <TextField fx:id="txtUserName" prefHeight="59.0" prefWidth="741.0" promptText="User Name" styleClass="transparent" stylesheets="@../../../style.css">
+                <font>
+                    <Font size="28.0" />
+                </font>
+            </TextField>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="12.0" layoutY="338.0" prefHeight="70.0" prefWidth="860.0" spacing="20.0" styleClass="search-box" stylesheets="@../../../style.css">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/telephone-call.png" />
+            </ImageView>
+            <TextField fx:id="txtPhone" prefHeight="59.0" prefWidth="754.0" promptText="Phone Number" styleClass="transparent" stylesheets="@../../../style.css">
+                <font>
+                    <Font size="28.0" />
+                </font>
+            </TextField>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="10.0" layoutY="474.0" prefHeight="69.0" prefWidth="859.0" spacing="20.0" styleClass="search-box" stylesheets="@../../../style.css">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/email(1).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtEmail" prefHeight="62.0" prefWidth="738.0" promptText="Email" styleClass="transparent" stylesheets="@../../../style.css">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </TextField>
+         </children>
+        </HBox>
+        <HBox alignment="CENTER" layoutX="9.0" layoutY="603.0" prefHeight="64.0" prefWidth="866.0" spacing="20.0" styleClass="search-box" stylesheets="@../../../style.css">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/padlock(2).png" />
+            </ImageView>
+            <PasswordField fx:id="txtPassword" prefHeight="59.0" prefWidth="746.0" promptText="Passward" styleClass="transparent" stylesheets="@../../../style.css">
+                <font>
+                    <Font size="28.0" />
+                </font>
+            </PasswordField>
+        </HBox>
+        <Button fx:id="btnLogin" layoutX="307.0" layoutY="733.0" mnemonicParsing="false" onAction="#ActionLogin" prefHeight="43.0" prefWidth="281.0" style="-fx-background-radius: 15 60; -fx-border-radius: 15 50; -fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Create" textFill="WHITE">
+            <font>
+                <Font name="Segoe UI Bold" size="26.0" />
+            </font>
+            <effect>
+                <DropShadow blurType="TWO_PASS_BOX" height="0.0" radius="0.0" width="0.0">
+                    <color>
+                        <Color red="1.0" green="0.4274509847164154" blue="0.04313725605607033" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </Button>
+        <HBox alignment="CENTER" layoutX="1143.0" layoutY="18.0" prefHeight="64.0" prefWidth="172.0">
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                <Image url="@../../../images/back-button.png" />
+            </ImageView>
+            <Button fx:id="btnBack" mnemonicParsing="false" onAction="#ActionBack" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: transparent;" text="Back" textFill="WHITE">
+                <font>
+                    <Font name="Segoe UI Bold" size="21.0" />
+                </font>
+            </Button>
+        </HBox>
+      <Label fx:id="labelIncompletInfo" layoutX="33.0" layoutY="694.0" text="In Complete informationl...Please Try again" textFill="RED" visible="false">
+         <font>
+            <Font name="Segoe UI" size="22.0" />
+         </font>
+      </Label>
+         <Button fx:id="adminButton1" layoutX="502.0" layoutY="25.0" mnemonicParsing="false" prefHeight="65.0" prefWidth="258.0" style="-fx-background-radius: 10 0 10 0; -fx-border-radius: 10 0 10 0; -fx-background-color: #eda723;" styleClass="shadow2" stylesheets="@../../../style.css" text="Admin" textFill="WHITE">
+             <font>
+                 <Font name="System Bold" size="35.0" />
+             </font>
+         </Button>
+         <Button fx:id="userButton" layoutX="221.0" layoutY="25.0" mnemonicParsing="false" onAction="#actionUserButton" opacity="0.5" prefHeight="74.0" prefWidth="258.0" style="-fx-background-radius: 10 0 10 0; -fx-border-radius: 10 0 10 0; -fx-background-color: #eda723;" stylesheets="@../../../style.css" text="User" textFill="WHITE">
+             <font>
+                 <Font name="Segoe UI Bold" size="35.0" />
+             </font>
+             <styleClass>
+                 <String fx:value="shadow" />
+                 <String fx:value="shadow2" />
+             </styleClass>
+         </Button>
+    </Pane>
+    <Button layoutX="-596.0" layoutY="-579.0" mnemonicParsing="false" text="Button" />
+</AnchorPane>

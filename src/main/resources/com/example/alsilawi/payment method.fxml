@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1315.0" styleClass="black_" stylesheets="@../../../style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.alsilawi.PaymentMethod">
+   <Pane fx:id="CardCreditCard" layoutX="151.0" layoutY="134.0" prefHeight="176.0" prefWidth="230.0" style="-fx-background-color: #eda723; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="480.0" AnchorPane.leftAnchor="151.0" AnchorPane.topAnchor="134.0">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="41.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../images/credit-card(4).png" />
+      </ImageView>
+      <Button layoutX="-13.0" layoutY="113.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Credit Card" textFill="#fafafa">
+         <font>
+            <Font name="Segoe UI Bold" size="38.0" />
+         </font>
+      </Button>
+   </Pane>
+   <Pane fx:id="cardCash" layoutX="578.0" layoutY="132.0" opacity="0.5" prefHeight="176.0" prefWidth="230.0" style="-fx-background-color: #eda723; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.leftAnchor="578.0">
+      <ImageView fitHeight="113.0" fitWidth="156.0" layoutX="41.0" layoutY="6.0" pickOnBounds="true">
+         <Image url="@../../../images/payment-method.png" />
+      </ImageView>
+      <Button layoutX="46.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Cash" textFill="#fafafa">
+         <font>
+            <Font name="Segoe UI Bold" size="41.0" />
+         </font>
+      </Button>
+   </Pane>
+   <Pane fx:id="cardPalPay" layoutX="965.0" layoutY="131.0" opacity="0.5" prefHeight="176.0" prefWidth="230.0" style="-fx-background-color: #eda723; -fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="483.0" AnchorPane.leftAnchor="965.0000000000001">
+      <ImageView fitHeight="108.0" fitWidth="129.0" layoutX="61.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../../images/social.png" />
+      </ImageView>
+      <Button layoutX="24.0" layoutY="110.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Pal Pay" textFill="#fafafa">
+         <font>
+            <Font name="Segoe UI Bold" size="38.0" />
+         </font>
+      </Button>
+   </Pane>
+   <Label layoutX="434.0" layoutY="377.0" text="total invoice: " textFill="RED" AnchorPane.bottomAnchor="341.8" AnchorPane.topAnchor="377.0">
+      <font>
+         <Font name="System Bold" size="49.0" />
+      </font>
+   </Label>
+   <TextField fx:id="txtCardNumber" layoutX="152.0" layoutY="488.0" prefHeight="53.0" prefWidth="1104.0" style="-fx-background-color: #f2f2f2;" AnchorPane.bottomAnchor="248.39999999999998" AnchorPane.topAnchor="488.0">
+      <font>
+         <Font name="Segoe UI Bold" size="17.0" />
+      </font></TextField>
+   <Label fx:id="lblCardNumber" layoutX="152.0" layoutY="445.0" text="Card Number" textFill="WHITE" AnchorPane.topAnchor="445.0">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="EXPDate" editable="true" layoutX="155.0" layoutY="603.0" prefHeight="26.0" prefWidth="187.0" AnchorPane.bottomAnchor="160.60000000000002" AnchorPane.topAnchor="603.0" />
+   <Label fx:id="lblExpirationDate" layoutX="152.0" layoutY="561.0" text="Expiration Date" textFill="WHITE" AnchorPane.bottomAnchor="189.0" AnchorPane.topAnchor="561.0">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="ComboBoxYear" editable="true" layoutX="444.0" layoutY="601.0" prefHeight="26.0" prefWidth="187.0" AnchorPane.bottomAnchor="162.60000000000002" AnchorPane.topAnchor="601.0" />
+   <Label fx:id="lblYear" layoutX="444.0" layoutY="560.0" text="Year" textFill="WHITE" AnchorPane.bottomAnchor="190.0" AnchorPane.topAnchor="560.0">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="comboBoxCCV" editable="true" layoutX="720.0" layoutY="602.0" prefHeight="26.0" prefWidth="187.0" AnchorPane.topAnchor="602.0" />
+   <Label fx:id="lblCCV" layoutX="721.0" layoutY="562.0" text="CCV Code" textFill="WHITE" AnchorPane.bottomAnchor="188.0" AnchorPane.topAnchor="562.0">
+      <font>
+         <Font size="28.0" />
+      </font>
+   </Label>
+   <Label alignment="CENTER" layoutX="287.0" layoutY="24.0" prefHeight="62.0" prefWidth="733.0" text="Your Payment Method info" textAlignment="CENTER" textFill="#a19b9b" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="688.4" AnchorPane.rightAnchor="294.4" AnchorPane.topAnchor="24.0">
+      <font>
+         <Font name="Bernard MT Condensed" size="62.0" />
+      </font>
+   </Label>
+   <Button fx:id="btnDone" layoutX="481.0" layoutY="699.0" mnemonicParsing="false" onAction="#ActionDone" prefHeight="69.0" prefWidth="403.0" style="-fx-background-radius: 15 60; -fx-border-radius: 15 50; -fx-border-color: #eda723;" styleClass="black_" stylesheets="@../../../style.css" text="Done" textFill="WHITE" AnchorPane.bottomAnchor="21.399999999999977" AnchorPane.topAnchor="699.0">
+      <font>
+         <Font name="Segoe UI Bold" size="26.0" />
+      </font>
+      <effect>
+         <DropShadow blurType="TWO_PASS_BOX" height="0.0" radius="0.0" width="0.0">
+            <color>
+               <Color red="1.0" green="0.4274509847164154" blue="0.04313725605607033" />
+            </color>
+         </DropShadow>
+      </effect>
+   </Button>
+   <HBox alignment="CENTER" layoutX="1173.0" layoutY="29.0" prefHeight="64.0" prefWidth="172.0" AnchorPane.rightAnchor="-12.0">
+      <children>
+         <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../images/back-button.png" />
+            </image>
+         </ImageView>
+         <Button fx:id="btnBack" mnemonicParsing="false" onAction="#ActionBack" prefHeight="42.0" prefWidth="91.0" style="-fx-background-color: transparent;" text="Back" textFill="WHITE">
+            <font>
+               <Font name="Segoe UI Bold" size="21.0" />
+            </font>
+         </Button>
+      </children>
+   </HBox>
+   <RadioButton fx:id="radioButtonCreditCard" layoutX="240.0" layoutY="333.0" mnemonicParsing="false" onAction="#ActionSelectedCreditCard" prefHeight="38.0" prefWidth="41.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </RadioButton>
+   <RadioButton fx:id="radioButtonCash" layoutX="673.0" layoutY="333.0" mnemonicParsing="false" onAction="#actionSelectedCash" prefHeight="38.0" prefWidth="41.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </RadioButton>
+   <RadioButton fx:id="radioButtonPalPay" layoutX="1059.0" layoutY="333.0" mnemonicParsing="false" onAction="#ActionSelectedPalPay" prefHeight="38.0" prefWidth="41.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+      <toggleGroup>
+         <ToggleGroup fx:id="toggolGroup" />
+      </toggleGroup>
+   </RadioButton>
+   <Label fx:id="totavValue" layoutX="751.0" layoutY="384.0" prefHeight="62.0" prefWidth="437.0" text="20" textFill="RED">
+      <font>
+         <Font name="Segoe UI Bold" size="49.0" />
+      </font>
+   </Label>
+   <Label fx:id="lblWarning" layoutX="155.0" layoutY="640.0" prefHeight="54.0" prefWidth="1072.0" text="Label" textFill="RED" visible="false">
+      <font>
+         <Font name="Segoe UI" size="29.0" />
+      </font>
+   </Label>
+</AnchorPane>
